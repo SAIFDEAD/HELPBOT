@@ -43,7 +43,7 @@ class Config(object):
     SHORTENER_API = os.environ.get("SHORTENER_API", None)
     SUDO_HANDLER = os.environ.get("SUDO_HANDLER", ".")
     TAG_LOGGER = int(os.environ.get("TAG_LOGGER", 0))
-    THUMB_IMG = os.environ.get("THUMB_IMG", "./HellConfig/resources/pics/hellbot_logo.jpg")
+    THUMB_IMG = os.environ.get("THUMB_IMG", "/HellConfig/resources/pics/IMG_20231204_023919_044.jpg")
     UNLOAD = list(os.environ.get("UNLOAD", "").split())
     UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/SAIFDEAD/USERBOT")
     UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "master")
