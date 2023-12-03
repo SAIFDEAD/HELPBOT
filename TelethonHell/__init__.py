@@ -25,7 +25,7 @@ if not Config.DATABASE_URL:
     quit(1)
 
 if not Config.HELLBOT_SESSION:
-    LOGS.warning("Please fill var HELLBOT_SESSION to continue.")
+    LOGS.warning("Please fill var SESSION to continue.")
     quit(1)
 
 try:
@@ -39,4 +39,4 @@ except Exception:
     HEROKU_APP = None
 
 
-# hellbot
+# SAIF BOTZ
