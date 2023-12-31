@@ -144,6 +144,8 @@ EMOJIS = [
     "👅",
     "😩",
     "🚰",
+    "♨️",
+    "🍁",
 ]
 
 UWUS = [
@@ -283,5 +285,5 @@ bio_msgs = [
     "You’re just jealous cuz I got swag.",
     "Scratch here ▒▒▒▒▒▒▒▒▒▒ to unveil my secret bio.",
     "In a world of average, I’m savage.",
-    "×× ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ××",
+    "×× ʟɛɢɛռɖaʀʏ ᴀғ Dead bot ××",
 ]
