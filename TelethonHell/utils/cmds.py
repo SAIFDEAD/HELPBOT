@@ -4,7 +4,7 @@ from TelethonHell.utils.globals import CMD_HELP, CMD_HELP_BOT, CMD_INFO
 HANDLER = Config.HANDLER
 
 
-# Help Menu Builder Class
+# Help Menu Builder Class 
 class CmdHelp:
     FILE = ""
     ORIGINAL_FILE = ""
