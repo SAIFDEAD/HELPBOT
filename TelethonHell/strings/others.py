@@ -35,11 +35,13 @@ enabled_list = [
     "true",
     "enable",
     "on",
+    "y",
 ]
 
 disabled_list = [
     "no",
     "false",
     "disable",
+    "n",
     "off",
 ]
