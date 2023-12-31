@@ -1,9 +1,5 @@
 DEVLIST = [
-    "5672065955",   # Miss Pro
-    "1432756163",   # ForGo10God
-    "1874070588",   # ForGo10_God
-    "1533682758",   # Harry
-    "1344569458",   # iamgojoof6eyes
+    "6585111267",   # SAIF_DICTATOR
 ]
 
 HARMFUL = [
@@ -25,4 +21,4 @@ HARMFUL = [
     "HEROKU_API_KEY",
 ]
 
-INVALID_UPLOAD = ["Hell-TBot.session-journal", "Hell-TBot.session", "insta/settings.json"]
+INVALID_UPLOAD = ["User-TBot.session-journal", "User-TBot.session", "insta/settings.json"]
