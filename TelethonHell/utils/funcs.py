@@ -18,4 +18,4 @@ async def is_admin(client, chat_id, user_id):
         return False
 
 
-# hellbot
+# SAIFDEAD
