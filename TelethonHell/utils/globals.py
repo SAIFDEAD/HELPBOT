@@ -4,3 +4,5 @@ CMD_HELP_BOT = {}
 CMD_INFO = {}
 LOAD_PLUG = {}
 SUDO_LIST = {}
+
+# SAIFDEAD
