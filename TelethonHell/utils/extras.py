@@ -99,4 +99,4 @@ async def parse_error(event, error, auto_parse=True, delete=True, time=10):
             await edit_or_reply(event, f"**ERROR !!** \n\n{error}")
 
 
-# hellbot
+# SAIFDEAD
