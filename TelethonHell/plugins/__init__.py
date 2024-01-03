@@ -42,7 +42,7 @@ from TelethonHell.utils.startup import *
 from TelethonHell.version import __hellver__, __telever__
 
 cjb = "./HellConfig/resources/pics/cjb.jpg"
-hell_logo = "./HellConfig/resources/pics/hellbot_logo.jpg"
+hell_logo = "./HellConfig/resources/pics/IMG_20231204_023919_044.jpg"
 restlo = "./HellConfig/resources/pics/rest.jpeg"
 shhh = "./HellConfig/resources/pics/chup_madarchod.jpeg"
 shuru = "./HellConfig/resources/pics/shuru.jpg"
@@ -57,17 +57,17 @@ telethon_version = __telever__
 abuse_m = "Enabled" if str(Config.ABUSE).lower() in enabled_list else "Disabled"
 is_sudo = "True" if gvar_sql.gvarstat("SUDO_USERS") else "False"
 
-my_channel = Config.MY_CHANNEL or "Its_HellBot"
-my_group = Config.MY_GROUP or "HellBot_Chat"
+my_channel = Config.MY_CHANNEL or "SAIFALLBOT"
+my_group = Config.MY_GROUP or "SAIFHELPGC"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
     my_group = my_group.replace("@", "")
 
-chnl_link = "https://t.me/its_hellbot"
-grp_link = "https://t.me/HellBot_Chat"
-hell_channel = f"[†hê Hêllẞø†]({chnl_link})"
-hell_grp = f"[Hêllẞø† Group]({grp_link})"
+chnl_link = "https://t.me/SAIFALLBOT"
+grp_link = "https://t.me/SAIFHELPGC"
+hell_channel = f"[𝐃ɪᴄᴛᴀᴛᴏᴛ ]({chnl_link})"
+hell_grp = f"[𝐃ɪᴄᴛᴀᴛᴏʀ ɢʀᴘ]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {count} : To get group members
