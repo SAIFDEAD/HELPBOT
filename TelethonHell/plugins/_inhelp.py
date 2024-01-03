@@ -20,7 +20,7 @@ else:
 alive_txt = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
+<b>𝚄𝚜𝚎𝚛ẞø† ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
@@ -73,7 +73,7 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://telegra.ph/file/b5eb69c60abfa61e13617.jpg"
             help_msg = f"🔰 **{hell_mention}**\n\n📜 __Plugins:__ `{len(CMD_HELP)}` \n🗂️ __Commands:__ `{len(apn)}`\n🗒️ __Page:__ 1/{veriler[0]}"
             if help_pic == "DISABLE":
                 result = builder.article(
@@ -93,13 +93,13 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="HellBot Alive",
+                    title="Saif Bot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>нєℓℓвσт ιѕ σиℓιиє</b> «««"
+            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>Ƨαιғ ʋƨɛявσт ιѕ σиℓιиє</b> «««"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo
@@ -122,7 +122,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+                PIC = "https://telegra.ph/file/b5eb69c60abfa61e13617.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     PIC,
@@ -135,7 +135,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     PIC,
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="Saif User Bot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -143,7 +143,7 @@ if Config.BOT_USERNAME and tbot:
             else:
                 result = builder.article(
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="Saif Bot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -151,7 +151,7 @@ if Config.BOT_USERNAME and tbot:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥 Ɖιcтαтσя ρм ρяσтɛcтισи 🔥\n\nHello!! тнιƨ ιƨ ƨαιғ ρм ρяσтɛcтɛ∂ αccσʋмт {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             a = gvarstat("PMPERMIT_PIC")
@@ -165,7 +165,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://telegra.ph/file/b5eb69c60abfa61e13617.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -181,7 +181,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     file=PIC,
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="Saif bot PM Permit",
                     buttons=[
                         [Button.inline("📝 Request Approval", data="req")],
                         [Button.inline("🚫 Block", data="heheboi")],
@@ -192,7 +192,7 @@ if Config.BOT_USERNAME and tbot:
             else:
                 result = builder.article(
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="Saif bot PM Permit",
                     buttons=[
                         [Button.inline("📝 Request Approval", data="req")],
                         [Button.inline("🚫 Block", data="heheboi")],
@@ -204,28 +204,28 @@ if Config.BOT_USERNAME and tbot:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡ ℙ𝕆𝕎𝔼ℝ 𝕆𝔽 𝕊𝔸𝕀𝔽 𝔻𝕀ℂ𝕋𝔸𝕋𝕆ℝ ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Network", "https://t.me/hellbot_networks")],
+                    [Button.url("Repo ", "https://github.com/SAIFDEAD/USERBOT")],
+                    [Button.url("Network", "https://t.me/SAIFALLBOT")],
                 ],
             )
 
         else:
             result = builder.article(
                 "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                text="""**Hey! This is [ƉƖƆƬ𝗔ƬѲЯ](https://t.me/SAI_INNOCENT) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        Button.url("• Updates •", "https://t.me/Its_HellBot"),
-                        Button.url("• Chat •", "https://t.me/hellbot_chats"),
+                        Button.url("• Updates •", "https://t.me/SAIFALLBOT"),
+                        Button.url("• Chat •", "https://t.me/SAIFHELPGC"),
                     ],
                     [
                         Button.url("• Repo •", "https://github.com/The-HellBot/HellBot"),
-                        Button.url("• Docs •", "https://hellbot.tech"),
+                        Button.url("• Owner•", "https://t.me/SAI_INNOCENT"),
                     ],
                     [
-                        Button.url("◈ HellBot Network ◈", "https://t.me/hellbot_networks"),
+                        Button.url("◈ DEVELOPER ◈", "https://t.me/SAIF_DICTATOR"),
                     ],
                 ],
                 link_preview=False,
@@ -239,7 +239,7 @@ if Config.BOT_USERNAME and tbot:
         if event.query.user_id in auth:
             reply_popup = "This is for Other Users..."
         else:
-            reply_popup = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_popup = "🔰 This is Ɖιcтαтσя PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_popup, cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"req")))
@@ -302,7 +302,7 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://telegra.ph/file/b5eb69c60abfa61e13617.jpg"
 
             if help_pic == "DISABLE":
                 await event.edit(
@@ -319,7 +319,7 @@ if Config.BOT_USERNAME and tbot:
                     file=help_pic,
                 )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself  and use your bot. Go to @SAIFHELPGC for more info.", cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
@@ -330,18 +330,18 @@ if Config.BOT_USERNAME and tbot:
                 f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen"
             )
             await event.edit(
-                f"**🎭 Closed HellBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})",
+                f"**🎭 Closed SaifBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ Ɖ𝙸𝙲𝚃𝙰𝚃𝙾𝚁 ™️]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself  and use your bot. Go to @SAIFALLBOT for more info.", cache_time=0, alert=True)
             
     @tbot.on(CallbackQuery(data=compile(b"send\((.+?)\)")))
     async def send(event):
         plugin = event.data_match.group(1).decode("UTF-8")
         _, _, hell_mention = await client_id(event, event.query.user_id)
-        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡"
+        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[𝑆𝐴𝐼𝐹 𝐵𝑂𝑇𝑍]({chnl_link})** ⚡"
         the_plugin_file = "./TelethonHell/plugins/{}.py".format(plugin.lower())
         butt = Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data="reopen")
         if os.path.exists(the_plugin_file):
@@ -403,7 +403,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself and use your bot. Go to SAIFHELPGCfor more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -459,4 +459,4 @@ if Config.BOT_USERNAME and tbot:
             )
 
 
-# hellbot
+# SAIFDEAD
